@@ -1,9 +1,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## `Set Up Firebase Project`
-To set up a firebase web project refer to this guide [https://firebase.google.com/docs/web/setup]
-Ensure you enable email and password sign in in your firebase project. [https://firebase.google.com/docs/auth/web/password-auth]
-Set up firebase storage to save audio and image files. [https://firebase.google.com/docs/storage/web/start]
+To set up a firebase web project refer to this guide [https://firebase.google.com/docs/web/setup]<br>
+Ensure you enable email and password sign in in your firebase project. [https://firebase.google.com/docs/auth/web/password-auth]<br>
+Set up firebase storage to save audio and image files. [https://firebase.google.com/docs/storage/web/start]<br>
 
 ##`Set up The APIs`
 Add the base url to src/config.js
