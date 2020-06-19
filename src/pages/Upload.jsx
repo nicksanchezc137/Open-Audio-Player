@@ -6,7 +6,7 @@ import firebase from "../services/Firebase";
 import FileUploader from "react-firebase-file-uploader";
 import InputComponent from "../components/Input";
 import ButtonComponent from "../components/ButtonComponent";
-import { saveMusic } from "../setters/saveTrack";
+import { saveMusic } from "../saveMusic/saveTrack";
 import Icon from "../components/Icon";
 import { connect } from "react-redux";
 import { setUser } from "../redux/actions/actions";
@@ -64,7 +64,7 @@ class Upload extends React.Component {
       let url =
         this.state.thumbnail_url && this.isUrlValid(this.state.thumbnail_url)
           ? this.state.thumbnail_url
-          : "https://www.iftf.org/uploads/RTEmagicC_Screen_Shot_2017-10-02_at_2.12.10_PM_03.png.png";
+          : "https://open-audio.ibua.co.ke/assets/placeholder.png";
       let data = {
         user_id: this.props.user.id,
         track_name: this.state.track_name,
@@ -73,7 +73,10 @@ class Upload extends React.Component {
         audio_url: this.state.track_url,
       };
       console.log("the data is ", data);
-      saveMusic(data).then((res) => alert("Audio Submitted!"));
+      saveMusic(data).then((res) => {
+        this.props.onFinish()
+        alert("Audio Submitted!");
+      });
     } else {
       alert("Still uploading...");
     }
@@ -176,21 +179,6 @@ class Upload extends React.Component {
             />
           </Col>
         </Row>
-        {/* <Row className="justify-content-md-center">
-          <Col lg={12} md={12}>
-            <label className="text-white ali">Thumbnail URL</label>
-            <input
-              type="text"
-              className="input-c"
-              placeholder={"Thumbnail URL"}
-              onChange={(event) => {
-                console.log("the enent is ", event.target.value);
-                this.setState({ thumbnail_url: event.target.value });
-              }}
-              value={this.state.thumbnail_url}
-            />
-          </Col>
-        </Row> */}
 
         <Row className="justify-content-md-center">
           <Col lg={12} md={12}>
@@ -207,7 +195,7 @@ class Upload extends React.Component {
             />
           </Col>
         </Row>
-
+        <Row><span className = "warning">Please view our terms of use before uploading</span></Row>
         <Row className="justify-content-md-center align-center">
           <Col lg={12} md={12}>
             {this.state.isUploading && this.state.loading ? (

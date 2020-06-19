@@ -83,8 +83,9 @@ function NavbarComponent(props) {
           onClose={() => setModal2(false)}
         />
       </ModalComponent>
+
       <ModalComponent visible={visible3}>
-        <Upload onClose={() => setModal3(false)} />
+        <Upload onFinish = {()=>setModal3(false)} onClose={() => setModal3(false)} />
       </ModalComponent>
 
       <Headroom>
@@ -96,7 +97,7 @@ function NavbarComponent(props) {
           className="nav-bar"
         >
           <Navbar.Brand href="javascript:void(0)">
-            <Link className="nav-link white-text" to="/debe/">
+            <Link className="nav-link white-text" to="/">
               <img className="logo-nav" src={require("../assets/logo.png")} />
             </Link>
           </Navbar.Brand>
@@ -105,19 +106,19 @@ function NavbarComponent(props) {
             <Nav className="mr-auto">
               <Nav.Link href="javascript:void(0)">
                 {" "}
-                <Link className="nav-link" to="/debe/">
+                <Link className="nav-link" to="/">
                   Tracks
                 </Link>
               </Nav.Link>
               <Nav.Link href="javascript:void(0)">
                 {" "}
-                <Link className="nav-link" to="/debe/top-weekly/">
+                <Link className="nav-link" to="/top-weekly/">
                   Top Weekly
                 </Link>
               </Nav.Link>
               <Nav.Link href="javascript:void(0)">
                 {" "}
-                <Link className="nav-link" to="/debe/playlist/">
+                <Link className="nav-link" to="/playlist/">
                   Playlists
                 </Link>
               </Nav.Link>

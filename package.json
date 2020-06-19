@@ -31,7 +31,7 @@
     "redux-persist": "^6.0.0",
     "start": "^5.1.0"
   },
-  "homepage": "http://193.46.198.162/debe",
+  
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

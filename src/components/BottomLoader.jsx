@@ -30,7 +30,7 @@ class BottomLoader extends React.Component {
     return (
       <div className = "loader2" >
         <Loader
-          type="TailSpin"
+          type="ThreeDots"
           color="#fc0254"
           height={50}
           width={50}

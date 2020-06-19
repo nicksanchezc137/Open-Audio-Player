@@ -4,7 +4,7 @@ import "./App.css";
 import { Container, Row, Col } from "react-bootstrap";
 import NavbarComponent from "./components/NavBar";
 import AudioTrackCard from "./components/AudioTrackCard";
-import { getMusic } from "./getters/getMusic";
+import { getMusic } from "./getMusic/getMusic";
 import LoaderComponent from "./components/LoadingComponent";
 import BottomLoader from "./components/BottomLoader";
 import { useSelector, useDispatch } from "react-redux";
@@ -120,7 +120,7 @@ function App(props) {
           </>
         ) : null}
         <Row className="custom-row">{renderMusic()}</Row>
-        {loading2 ? <BottomLoader /> : null}}
+        {loading2 ? <BottomLoader /> : null}
       </Container>
     </>
   );

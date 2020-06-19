@@ -95,7 +95,7 @@ function AudioTrackCard(props) {
           <Link
             className="justify-content-md-center align-center"
             onClick={() => {
-              props.navigation.push("/debe/track/id=" + props.track.id);
+              props.navigation.push("/track/id=" + props.track.id);
             }}
           >
             <LazyLoadImage

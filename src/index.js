@@ -24,38 +24,38 @@ ReactDOM.render(
       <>
         <BrowserRouter>
           <Switch>
-            <Route path="/debe/" exact render={(props) => <App {...props} />} />
+            <Route path="/" exact render={(props) => <App {...props} />} />
             <Route
-              path="/debe/about/"
+              path="/about/"
               exact
               render={(props) => <About {...props} />}
             />
             <Route
-              path="/debe/login/"
+              path="/login/"
               exact
               render={(props) => <Login {...props} />}
             />
             <Route
-              path="/debe/upload/"
+              path="/upload/"
               exact
               render={(props) => <Upload {...props} />}
             />
             <Route
-              path="/debe/top-weekly/"
+              path="/top-weekly/"
               exact
               render={(props) => <TopMusic {...props} />}
             />
             <Route
-              path="/debe/signup/"
+              path="/signup/"
               exact
               render={(props) => <SignUp {...props} />}
             />
             <Route 
-            path = "/debe/track/id=:id"  exact
+            path = "/track/id=:id"  exact
             render={(props) => <Track {...props} />}
           />
            <Route 
-            path = "/debe/playlist/"  exact
+            path = "/playlist/"  exact
             render={(props) => <Playlist {...props} />}
           />
           </Switch>

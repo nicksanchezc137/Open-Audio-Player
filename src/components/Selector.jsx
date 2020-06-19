@@ -9,7 +9,7 @@ import Icon from "../components/Icon";
 import firebase from "../services/Firebase";
 import { Api } from "../services/Api";
 import SelectorCheckbox from "./SelectorCheckBox";
-import { getMusic } from "../getters/getMusic";
+import { getMusic } from "../getMusic/getMusic";
 
 class Selector extends React.Component {
   state = {

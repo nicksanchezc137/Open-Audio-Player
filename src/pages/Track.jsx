@@ -69,19 +69,21 @@ function Track(props) {
       <Container className="cntr-dark" fluid>
         <Row className="justify-content-md-center" style={{ paddingTop: 25 }}>
           <Col
-            className="justify-content-md-center text-center"
+            className="justify-content-md-center text-center center-block"
             xs={12}
             sm={12}
-            md={12}
+            md={6}
             lg={6}
           >
+            <Row>
             <LazyLoadImage
               src={`${track.thumbnail_url}`}
               className="std-img img-fluid text-center"
               effect="blur"
             />
+            </Row>
 
-            <span className="text-white desc">{track.track_desc}</span>
+            <h4 className="text-white desc">{track.track_desc}</h4>
           </Col>
 
           <Col xs={12} sm={12} md={12} lg={6} className="list-container">

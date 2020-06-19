@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "../App.css";
 import { Container, Row ,Col} from "react-bootstrap";
 import NavbarComponent from "../components/NavBar";
-import { getMusic } from "../getters/getMusic";
+import { getMusic } from "../getMusic/getMusic";
 import LoaderComponent from "../components/LoadingComponent";
 import AudioTrackCard from "../components/AudioTrackCard";
 

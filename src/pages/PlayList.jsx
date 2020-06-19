@@ -85,7 +85,10 @@ function Playlist(props) {
         filter: "all",
         page: page,
       };
-      console.log("get all playlist dat ---------------- playlist data is ", data);
+      console.log(
+        "get all playlist dat ---------------- playlist data is ",
+        data
+      );
       setLoading(true);
       Api.post("get_playlists.php", data)
         .then((res) => {
@@ -102,15 +105,20 @@ function Playlist(props) {
             setPage((prev) => prev + 2);
             setLoading(false);
             setFetching(false);
+          }else{
+            setLoading(false);
+            setFetching(false);
           }
         })
         .catch((error) => {
           console.log("Error: ", error);
-          // this.setState({loading:false})
+          setLoading(false);
+          setFetching(false);
         });
     } catch (error) {
       console.log("Error", error);
-      // this.setState({loading:false})
+      setLoading(false);
+      setFetching(false);
     }
   };
   const renderPlaylist = () => {
@@ -172,7 +180,7 @@ function Playlist(props) {
       />
 
       <Container className="cntr-dark" fluid>
-        {!loading ? (
+        {!loading && playlists.length? (
           <Row>
             <Col lg={6}>
               <h2 className="text-white margin-t">Popular Playlists</h2>
@@ -181,7 +189,7 @@ function Playlist(props) {
         ) : null}
         <Row>
           <Col lg={6}>
-            {user.email != "no email" && !loading? (
+            {user.email != "no email" && !loading ? (
               <a
                 className="primary-text add-plst"
                 href="javascript:void(0)"
