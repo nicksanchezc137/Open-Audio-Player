@@ -1,5 +1,6 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+You can vide the project [HERE](https://open-audio.ibua.co.ke/).
 
+![Preview](https://firebasestorage.googleapis.com/v0/b/open-audio-player.appspot.com/o/image%2Fsreenshot.PNG?alt=media&token=f12edfe0-c563-4c76-9942-5493ac6288e8)
 ## `Set Up Firebase Project`
 To set up a firebase web project refer to this guide [https://firebase.google.com/docs/web/setup]<br>
 Ensure you enable email and password sign in in your firebase project. [https://firebase.google.com/docs/auth/web/password-auth]<br>
