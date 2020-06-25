@@ -1,5 +1,11 @@
+<<<<<<< HEAD
 A Simple Audio Player Built with React.<br>
 You can view the project [HERE](https://open-audio.ibua.co.ke/).
+=======
+# A Simple Audio Player Built with React.<br>
+You can view the project [HERE](https://open-audio.ibua.co.ke/).<br>
+[React Native Repo](https://github.com/nicksanchezc137/RN-Open-Audio-Player/blob/master/README.md)<br>
+>>>>>>> 897ec6635426d7743e5aa0efea276948d21d316e
 
 ![Preview](https://firebasestorage.googleapis.com/v0/b/open-audio-player.appspot.com/o/image%2Fsreenshot.PNG?alt=media&token=f12edfe0-c563-4c76-9942-5493ac6288e8)
 ## `Set Up Firebase Project`
@@ -7,10 +13,17 @@ To set up a firebase web project refer to this guide [https://firebase.google.co
 Ensure you enable email and password sign in in your firebase project. [https://firebase.google.com/docs/auth/web/password-auth]<br>
 Set up firebase storage to save audio and image files. [https://firebase.google.com/docs/storage/web/start]<br>
 
+<<<<<<< HEAD
 ##`Set up The APIs`
 Add the base url to src/config.js
 
 
+=======
+## `Set up The APIs`<br>
+[API Repo](https://github.com/nicksanchezc137/Open-Player-API/blob/master/README.md)<br>
+Add the base url to src/config.js
+
+>>>>>>> 897ec6635426d7743e5aa0efea276948d21d316e
 
 ## Available Scripts
 
